@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Artquest</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+	<nav id="nav" onclick="toggleNav()">
+		<ul class="menu">
+			<li><a href="#">Правила</a></li>
+			<li><a href="#">Галлерея</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<div class="details">
+			<a href="#" class="phone">058 706 3046</a>
+			<a href="#" class="location">Tel Aviv</a>
+			<a href="#" class="en">En</a>
+		</div>
+	</nav>
+
+	<header>
+		<div class="hamburger" id="hamburger" onclick="toggleNav()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<a href="#" title="logo" class="logo"></a>
+		<div class="details">
+			<a href="#" class="phone">058 706 3046</a>
+			<a href="#" class="location">Tel Aviv</a>
+			<a href="#" class="en">En</a>
+		</div>
+	</header>
+
+	<section class="sliderWrapper">
+		<div id="slider">
+			<ul class="slideList">
+				<li><img src="img/slider/bar.jpg" alt="bar"></li>
+			</ul>
+		</div>
+		<button class="leftArrow prev"></button>
+		<button class="rightArrow next"></button>
+	</section>
+
+	<section class="description">
+		<div class="wrapper">
+			<article class="descriptionText">
+				<h1>Escape Room Alendy Club 28</h1>
+				<p>
+					Donec cursus massa in ante blandit, at tincidunt neque iaculis. Aenean mi justo, scelerisque ac est ornare, viverra varius nisi. Nam sit amet gravida nisl, at tempus nisi. Suspendisse sed porttitor erat. Mauris venenatis cursus molestie. Etiam sollicitudin, turpis ac accumsan eleifend, est nisl fringilla eros, in pellentesque erat felis ac est. Fusce sit amet massa turpis. Nulla blandit orci velit, non molestie nisi pretium ac. Aliquam dignissim egestas laoreet.
+				</p>
+				<p>	
+					In ullamcorper luctus elit. Maecenas at enim sagittis, molestie massa at, porttitor arcu. Mauris justo libero, condimentum sit amet nibh nec, pellentesque volutpat leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc elementum leo sit amet arcu faucibus finibus. Vestibulum vitae velit iaculis, vestibulum urna a, eleifend enim. Pellentesque eu erat et ex ornare mattis vel et neque. In lacinia lorem id dignissim laoreet. Donec gravida in turpis sed sollicitudin. Duis eleifend laoreet lorem.
+				</p>
+			</article>
+
+			<table class="conditions">
+				<caption>Room Position</caption>
+				<tbody>
+					<tr>
+						<td><img src="img/conditions/actor.png" alt="actor mask"></td>
+						<td>With Actor Inside</td>
+					</tr>
+					<tr>
+						<td><img src="img/conditions/person.png" alt="person"></td>
+						<td>3 up to 8 person</td>
+					</tr>
+					<tr>
+						<td><img src="img/conditions/clock.png" alt="clock"></td>
+						<td>60 Minutes</td>
+					</tr>
+					<tr>
+						<td><img src="img/conditions/level.png" alt="level"></td>
+						<td>Middle Level</td>
+					</tr>
+					<tr>
+						<td><img src="img/conditions/lock.png" alt="lock"></td>
+						<td>+21 Only</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section>
+		<div class="greenLine">
+			<h1>Book your adventure now!</h1>
+		</div> 
+		<div class="personAmount">
+			<p>Please, chose how many persons will come:</p>
+			<div class="personAmountWrap">
+				<input class="personAmount_input" id="personAmount_8" type="radio" name="amount" value="8" onclick="bookPersonAmount(8)">
+				<label class="personAmount_ico" for="personAmount_8" title="8 out of 8 persons"></label>
+
+				<input class="personAmount_input" id="personAmount_7" type="radio" name="amount" value="7" onclick="bookPersonAmount(7)">
+				<label class="personAmount_ico" for="personAmount_7" title="7 out of 8 persons"></label>
+
+				<input class="personAmount_input" id="personAmount_6" type="radio" name="amount" value="6" onclick="bookPersonAmount(6)">
+				<label class="personAmount_ico" for="personAmount_6" title="6 out of 8 persons"></label>
+
+				<input class="personAmount_input" id="personAmount_5" type="radio" name="amount" value="5" onclick="bookPersonAmount(5)">
+				<label class="personAmount_ico" for="personAmount_5" title="5 out of 8 persons"></label>
+
+				<input class="personAmount_input" id="personAmount_4" type="radio" name="amount" value="4" onclick="bookPersonAmount(4)">
+				<label class="personAmount_ico" for="personAmount_4" title="4 out of 8 persons"></label>
+
+				<input class="personAmount_input" id="personAmount_3" type="radio" name="amount" value="3" onclick="bookPersonAmount(3)">
+				<label class="personAmount_ico" for="personAmount_3" title="3 out of 8 persons"></label>
+
+				<input class="personAmount_input" id="personAmount_2" type="radio" name="amount" value="2" onclick="bookPersonAmount(2)">
+				<label class="personAmount_ico" for="personAmount_2" title="2 out of 8 persons"></label>
+
+				<input class="personAmount_input" id="personAmount_1" type="radio" name="amount" value="1" onclick="bookPersonAmount(1)">
+				<label class="personAmount_ico" for="personAmount_1" title="1 out of 8 persons"></label>
+			</div>
+		</div>
+		<table id="calendar" cellpadding="1px" cellspacing="0" border="1px">
+			<tbody>
+				<tr id="month">
+					<td colspan="2">
+						<button class="twicePrev"></button>
+						<button class="prev"></button>
+						<button class="next"></button>
+						<button class="twiceNext"></button>
+						<span id="date"></span>
+					</td>
+				</tr>
+				<tr id="day">
+					<td colspan="2">
+						<button class="twicePrev"></button>
+						<button class="prev"></button>
+						<button class="next"></button>
+						<button class="twiceNext"></button>
+						<ul id="week">
+							<li id="today">Mon 12</li>
+							<li>Tue 13</li>
+							<li>Wed 14</li>
+							<li>Thu 15</li>
+							<li>Fri 16</li>
+							<li>Sat 17</li>
+							<li>Sun 18</li>
+						</ul>
+					</td>							
+				</tr>
+			</tbody>
+			<tbody id="time">
+				<tr>
+					<td>10:00</td>
+					<td>
+						<ul>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>12:00</td>
+					<td>
+						<ul>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+							<li class="lowCost busy">450</li>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>14:00</td>
+					<td>
+						<ul>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+							<li class="lowCost busy">450</li>
+							<li class="lowCost">450</li>
+							<li class="middleCost">550</li>
+							<li class="middleCost">550</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>16:00</td>
+					<td>
+						<ul>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+							<li class="lowCost">450</li>
+							<li class="lowCost busy">450</li>
+							<li class="lowCost">450</li>
+							<li class="middleCost">550</li>
+							<li class="middleCost">550</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>18:00</td>
+					<td>
+						<ul>
+							<li class="middleCost">550</li>
+							<li class="middleCost">550</li>
+							<li class="middleCost">550</li>
+							<li class="middleCost">550</li>
+							<li class="middleCost busy">550</li>
+							<li class="highCost">600</li>
+							<li class="highCost">600</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>20:00</td>
+					<td>
+						<ul>
+							<li class="highCost">600</li>
+							<li class="highCost">600</li>
+							<li class="highCost">600</li>
+							<li class="highCost">600</li>
+							<li class="highCost busy">600</li>
+							<li class="highCost">600</li>
+							<li class="highCost">600</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>22:00</td>
+					<td>
+						<ul>
+							<li class="highCost">600</li>
+							<li class="highCost">600</li>
+							<li class="highCost">600</li>
+							<li class="highCost">600</li>
+							<li class="highCost">600</li>
+							<li class="highCost">600</li>
+							<li class="highCost">600</li>
+						</ul>
+					</td>
+				</tr>
+				<tr><td></td><td></td></tr>
+			</tbody>
+		</table>
+	</section>
+
+	<hr class="line">
+
+	<section class="bookingDetails">
+		<h1>Booking Details</h1>
+		<form class="bookingForm">
+			<div>
+				<p>Game Room: <span id="chosenRoom">Alendy Club 28</span></p>
+			</div>
+			<div>
+				<p>Date: <span id="chosenDate">Wed, 07,12,16</span></p>
+			</div>
+			<div>
+				<p>Time: <span id="chosenTime">16:00</span></p>
+			</div>
+			<div>
+				<p>Persons: <span id="chosenPersonAmount">3</span></p>
+			</div>
+			<input type="text" placeholder="First and Last Name">
+			<input type="text" placeholder="E-mail">
+			<input type="text" placeholder="Phone __ ___ ____">
+			<div class="totalPrice">
+				<p>Total Price: <span id="price">450 UAH</span></p>
+			</div>
+			<button class="greenButton">Booking Room!</button>		
+		</form>
+	</section>
+
+	<footer>
+	<div class="wrapper">
+		<p>2016 Copyright ArtQuest. All Rights Reserved. Privacy Policy</p>
+	</div>
+	</footer>
+	<script src="js/moment-with-locales.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

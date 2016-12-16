@@ -175,9 +175,9 @@ a.en::before {
 	position: absolute;
 	left: 48%;
 	width: 0; 
-  	height: 0; 
-  	border-left: 30px solid transparent;
-  	border-right: 30px solid transparent;
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
 	border-top: 20px solid #000;
 }
 .sliderWrapper button {
@@ -270,9 +270,9 @@ a.en::before {
 
 .personAmount {
 	display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
 }
 .personAmountWrap {
 	display: inline-block;
@@ -318,9 +318,9 @@ a.en::before {
 #calendar .twicePrev, #calendar .twiceNext {
 	position: absolute;
 	top: 13px;
-    width: 26px;
-    height: 29px;
-    margin: 0 6px;
+  width: 26px;
+  height: 29px;
+  margin: 0 6px;
 	background-size: contain;
 }
 #calendar .twicePrev {
@@ -353,7 +353,7 @@ a.en::before {
 	display: block;
 	width: 135px;
 	text-align: center;
-	padding: 20px 0;
+	padding: 15px 0;
 	font-family: 'pfbeausanspro-sebold';
 	font-size: 20px;
 }
@@ -362,15 +362,15 @@ a.en::before {
 	max-height: 58px;
 	overflow: hidden;
 	text-align: center;
-    margin: auto;
-    padding: 0;
-    color: #fff;
+ 	margin: auto;
+ 	padding: 0;
+ 	color: #fff;
 }
 #week li {
 	width: 30px;
-    display: inline-block;
-    margin: 11px 28px;
-    text-align: left;
+  display: inline-block;
+  margin: 11px 28px;
+  text-align: left;
 }
 #day {
 	background-color: #333333;
@@ -389,9 +389,9 @@ a.en::before {
 }
 #time td:nth-child(2) {
 	border: 1px solid #282828;
-    border-top-color: #fff;
-    border-left-color: #fff;
-    border-right-color: #fff;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  border-right-color: #fff;
 }
 #time tr:last-child td:nth-child(2) {
 	border-bottom-color: #fff;
@@ -404,17 +404,17 @@ a.en::before {
 	max-height: 52px;
 	overflow: hidden;
 	text-align: center;
-    margin: auto 96px auto 24px;
-    padding: 0;
-    color: #fff;
+  margin: auto 96px auto 24px;
+  padding: 0;
+  color: #fff;
 }
 #time li {
 	width: 30px;
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 8px 8px 6px;
-    border-radius: 5px;
-    cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 8px 8px 6px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 #time li.lowCost {
 	background-color: var(--green); 

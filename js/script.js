@@ -13,9 +13,7 @@ function bookPersonAmount(value){ // runs when user chose how many persons will 
 	document.getElementById('chosenPersonAmount').innerHTML = personAmount;
 }
 
-var currentDate = moment().format('MMMM YY') + "'";
-var date = document.getElementById('date')
-date.innerHTML = currentDate;
+
 
 
 

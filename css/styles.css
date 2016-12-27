@@ -223,6 +223,7 @@ a.en::before {
 .descriptionText {
 	max-width: 600px;
 	text-align: left;
+	margin: 0 40px;
 }
 .descriptionText h1 {
 	color: var(--green);
@@ -529,6 +530,9 @@ footer .wrapper {
 	#nav {
 		left: -100%;
 		width: 100%;
+	}
+	.descriptionText {
+		margin: 0;
 	}
 	.conditions {
 		margin-top: 50px;
